@@ -5,7 +5,8 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "server": "json-server ./src/services/server.json --host 192.168.5.150 --port 3333 --delay 750"
   },
   "dependencies": {
     "@expo-google-fonts/jost": "^0.1.0",
@@ -20,6 +21,7 @@
     "expo-status-bar": "~1.0.4",
     "install": "^0.13.0",
     "json-server": "^0.16.3",
+    "lottie-react-native": "^4.0.2",
     "react": "16.13.1",
     "react-dom": "16.13.1",
     "react-native": "https://github.com/expo/react-native/archive/sdk-41.0.0.tar.gz",
@@ -28,6 +30,7 @@
     "react-native-reanimated": "^2.1.0",
     "react-native-safe-area-context": "^3.2.0",
     "react-native-screens": "^3.1.1",
+    "react-native-svg": "^12.1.1",
     "react-native-web": "~0.13.12"
   },
   "devDependencies": {

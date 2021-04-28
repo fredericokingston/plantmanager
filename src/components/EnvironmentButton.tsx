@@ -24,6 +24,7 @@ export function EnvironmentButton({
         styles.container,
         active && styles.containerActive
       ]}
+      {...rest}
     >
       <Text 
         style={[
@@ -44,7 +45,7 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     borderRadius: 12,
-    marginRight: 4
+    marginRight: 8
   },
   containerActive: {
     backgroundColor: colors.green_light
