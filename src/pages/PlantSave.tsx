@@ -17,7 +17,7 @@ import { format, isBefore } from 'date-fns';
 
 import waterDropImg from '../assets/waterdrop.png'
 import { Button } from '../components/Button';
-import { PlantProps } from '../libs/storage';
+import { loadPlant, PlantProps, savePlant } from '../libs/storage';
 
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
@@ -51,6 +51,19 @@ export function PlantSave() {
 
   function handleOpenDateTimaePickerAndroid() {
     setShowDatePicker(oldstate => !oldstate)
+  }
+
+  async function handleSave() {
+    const data = await loadPlant();
+    console.log(data)
+    // try {
+    //   await savePlant({
+    //     ...plant,
+    //     dateTimeNotification: selectedDateTime
+    //   });
+    // } catch {
+    //   Alert.alert('Não foi possível salvar. 😢')
+    // }
   }
 
   return (
@@ -106,7 +119,7 @@ export function PlantSave() {
         </View>
         <Button
           text="Cadastrar planta"
-          onPress={() => {}}
+          onPress={handleSave}
         />
       </View>
     </ View>
