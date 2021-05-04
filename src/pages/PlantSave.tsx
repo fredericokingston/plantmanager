@@ -182,8 +182,7 @@ const styles = StyleSheet.create({
     marginLeft: 16,
     fontSize: 15,
     lineHeight: 23,
-    color: colors.blue,
-    textAlign: 'justify'
+    color: colors.blue
   },
   datePickerContentainer:{
     width: '100%',
