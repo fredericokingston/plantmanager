@@ -15,9 +15,10 @@ import { useNavigation, useRoute } from '@react-navigation/core';
 import DateTimePicker, { Event } from '@react-native-community/datetimepicker'
 import { format, isBefore } from 'date-fns';
 
-import waterDropImg from '../assets/waterdrop.png'
 import { Button } from '../components/Button';
-import { loadPlant, PlantProps, savePlant } from '../libs/storage';
+import { PlantProps, savePlant } from '../libs/storage';
+
+import waterDropImg from '../assets/waterdrop.png'
 
 import colors from '../styles/colors';
 import fonts from '../styles/fonts';
